@@ -1,5 +1,6 @@
 package com.libs.parul.mylauncherlibrary;
 
+import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 
@@ -9,9 +10,9 @@ public class AppInfo {
     String appName;
     String pkgName;
     Drawable icon;
-    String launcherIntent;
+    Intent launcherIntent;
     int versionCode;
-    int versionName;
+    String versionName;
 
     public AppInfo(String appName, Drawable icon, String pkgName) {
         this.appName = appName;
@@ -44,11 +45,11 @@ public class AppInfo {
         this.icon = icon;
     }
 
-    public String getLauncherIntent() {
+    public Intent getLauncherIntent() {
         return launcherIntent;
     }
 
-    public void setLauncherIntent(String launcherIntent) {
+    public void setLauncherIntent(Intent launcherIntent) {
         this.launcherIntent = launcherIntent;
     }
 
@@ -60,11 +61,11 @@ public class AppInfo {
         this.versionCode = versionCode;
     }
 
-    public int getVersionName() {
+    public String getVersionName() {
         return versionName;
     }
 
-    public void setVersionName(int versionName) {
+    public void setVersionName(String versionName) {
         this.versionName = versionName;
     }
 
