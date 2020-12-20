@@ -67,7 +67,7 @@ public class AppsInfoProvider {
         //sort
         /*Collections.sort(
                 packageNameHashSet, Comparator.comparing(AppInfo::appName));*/
-        //packageNameHashSet.sort(Comparator.comparing(AppInfo::getAppName));
+        packageNameHashSet.sort(Comparator.comparing(AppInfo::getAppName));
         for(AppInfo app : packageNameHashSet)
             Log.d("LIB",app.appName);
         //TODO : sorting
